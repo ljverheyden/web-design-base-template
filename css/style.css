@@ -43,6 +43,8 @@ header{
 	padding-top: 30px;
 	min-height: 70px;
 	border:#e8491d 3px solid;
+	position: fixed;
+	width: 100%;
 }
 
 header a{
@@ -173,7 +175,7 @@ ul#services li{
 /*footer*/
 footer{
 	padding:20px;
-	margin:20px;
+	
 	text-align: center;
 	color: white;
 	background:#e8491d;
