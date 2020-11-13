@@ -132,14 +132,17 @@ header a:hover{
 /*boxes*/
 #boxes{
 	margin-top: 20px;
+
 }
 
 #boxes .box{
 	float: left;
 	width: 30%;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
+	
 }
+
 
 #title-d{
 	margin-top: 60px;
@@ -148,7 +151,15 @@ header a:hover{
 #boxes .box img{
 	width: 90px
 }
-
+ .box-button{
+ 	height: 35px;
+	background:#e8491d;
+	border:none;
+	padding-left:20;
+	padding-right:20
+	margin-bottom:20px;
+	color: white;: 
+ }
 /*sidebar*/
 aside#side-bar{
 	float: right;
@@ -175,7 +186,7 @@ ul#services li{
 /*footer*/
 footer{
 	padding:20px;
-	
+	margin-top: 20px;
 	text-align: center;
 	color: white;
 	background:#e8491d;
