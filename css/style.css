@@ -102,33 +102,6 @@ header a:hover{
 	font-size: 20px;
 }
 
-/*newsletter*/
-
-#newsletter{
-	background:#35424a;
-	padding: 15px;
-	color: white;
-}
-
-#newsletter h1{
-	float: left;
-
-}
-
-#newsletter form{
-	float: left;
-	margin-top: 15px;
-	padding-left: 10px;
-}
-
-#newsletter input[type="email"]{
-	padding: 4px;
-	height: 30px;
-	width: 250px;
-}
-
-
-
 /*boxes*/
 #boxes{
 	margin-top: 20px;
@@ -158,11 +131,46 @@ header a:hover{
 	padding-left:20;
 	padding-right:20
 	margin-bottom:20px;
-	color: white;: 
+	color: white;
+	border-radius: 5px;
  }
+
+ .modal-button:hover{
+ 	cursor: pointer;
+ }
+
+/*newsletter*/
+
+#newsletter{
+	background:#35424a;
+	padding: 15px;
+	color: white;
+}
+
+#newsletter h1{
+	float: left;
+
+}
+
+#newsletter form{
+	float: left;
+	margin-top: 15px;
+	padding-left: 10px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 30px;
+	width: 250px;
+}
+
+
+
+
 
  /* modals */
 .modal{
+  display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -195,6 +203,8 @@ header a:hover{
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
 /*sidebar*/
 aside#side-bar{

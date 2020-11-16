@@ -44,6 +44,8 @@
 			</form>
 		</div>
 	</section>
+<!-- boxes and modal area-->
+
 
 	<section id="boxes">
 		<div class="container">
@@ -53,31 +55,49 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut 
 				</p>
-				<button class="modal-button">Learn more</button>
+				<button id="htmlBtn" class="modal-button">Learn more</button>
 			</div>
+		
 		<div class="box">
 			<img src="./img/css.png" height="90">
 				<h3>css3</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut 
 				</p>
-				<button class="modal-button">Learn more</button>
+				<button id="cssBtn" class="modal-button">Learn more</button>
 			</div>
+		
 		<div class="box">
 			<img src="./img/ux.png">
 				<h3 id="title-d">design ux</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut 
 				</p>
-				<button class="modal-button">Learn more</button>
+				<button id="uxBtn" class="modal-button">Learn more</button>
 
 			</div>
 		</div>
 	
 	<!-- modal boxes -->
-		<div id="modal-html" class="modal">
+	<!--html-->
+		<div id="htmlModal" class="modal">
 			<div class="modal-content">
-				<span class="close">&times;</span>
+				<p>modal text</p>
+			</div>
+		</div>
+	</section>
+
+	<!--css-->
+		<div id="cssModal" class="modal">
+			<div class="modal-content">
+				<p>modal text</p>
+			</div>
+		</div>
+	</section>
+
+	<!--ux-->
+		<div id="uxModal" class="modal">
+			<div class="modal-content">
 				<p>modal text</p>
 			</div>
 		</div>
@@ -87,8 +107,63 @@
 		<p>copyright &copy;luke verheyden</p>
 	</footer>
 
+<script>
+	// Get the html modal
+var modal = document.getElementById("htmlModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("htmlBtn");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+	// Get the css modal
+var modal = document.getElementById("cssModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("cssBtn");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+	// Get the ux modal
+var modal = document.getElementById("uxModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("uxBtn");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
 </body>
 </html>	
-<script type="text/javascript">
-	var	modal = document.getelementbyid('modal-html')
-</script>
